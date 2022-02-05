@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 10%;
+    color: rgb(14, 11, 54);
+}
+
+/*This is the part where we experiment 
+and comment eveything out to apply on later grids
+*/
+.grid-container {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(3,1fr);
+     /*grid-template-columns: 300px repeat(2, 200px);*/
+    /*grid-template-columns: 33.3% 33.3% 33.3%*/
+    /*grid-template-columns: 30% 20% 50%;*/
+    /*grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,200px);*/
+   /* grid-auto-rows: 200px; every sing row will have 200px in hight ignoring the text*/
+   /*grid-template-rows: 200px 300px 400px 200px;*/
+   /*grid-template-rows:repeat(3,200px);
+   grid-auto-rows: minmax(200px, auto);*/
+    grid-template-rows: repeat(2,200px);   
+}
+.grid-item {
+   color: rgb(26, 23, 23);
+   border-radius: 1px;
+   margin: 5px;
+   /*text-align: center;*/
+}
+.grid-item:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+}
+.grid-item:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-item:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-item:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+.grid-item:nth-child(5){
+    background-color: rgb(240, 203, 136);
+}
+.grid-item:nth-child(6){
+    background-color: rgb(231, 225, 171);
+}
+
+
+/*This is the first part of the assigment*/
+
+.grid-containertwo {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    /*grid-column-gap:10px;
+    grid-row-gap:10px;*/
+    grid-gap: 10px;
+    /*max-width: 1000px;*/
+    height: 400px;
+   
+}
+.grid-two {
+   color: rgb(26, 23, 23);
+   border-radius: 2px;
+   /*margin: 5px;*/
+   /*padding: 30px;*/
+   text-align: center;
+
+}
+.grid-twoone{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*grid-row-start:1;
+    grid-row-end:3;*/
+}
+.grid-twotwo{
+    grid-column-start: 3;
+    grid-column-end:4 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-twoone:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+    
+}
+.grid-twotwo:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-twothree:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-twofour:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+/*.grid-two:nth-child(5){
+    background-color: rgb(224, 148, 7);
+}
+.grid-two:nth-child(6){
+    background-color: rgb(243, 198, 129);
+}
+.grid-two:nth-child(7){
+    background-color: rgb(240, 224, 136);
+}
+.grid-two:nth-child(8){
+    background-color: rgb(236, 228, 152);
+}
+.grid-two:nth-child(9){
+    background-color: rgb(241, 219, 177);
+}*/
+
+
+/*temos aqui o codigo para as grelhas tres e quatro*/
+
+.grid-containerthree {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: 300px repeat(2, 200px);*/
+    grid-template-rows: repeat(2,200px);   
+}
+.grid-three {
+   color: rgb(26, 23, 23);
+   border-radius: 1px;
+   margin: 5px;
+   /*text-align: center;*/
+}
+.grid-three:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+}
+.grid-three:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-three:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-three:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+.grid-three:nth-child(5){
+    background-color: rgb(240, 203, 136);
+}
+.grid-three:nth-child(6){
+    background-color: rgb(231, 225, 171);
+}
+
+.grid-containerfour {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(6,1fr);
+    /*grid-template-columns: 300px repeat(2, 200px);*/
+    grid-template-rows: repeat(6,100px);  
+    grid-gap: 10px;
+}
+.grid-four {
+   color: rgb(26, 23, 23);
+   border-radius: 3px;
+   margin: 10px;
+   /*text-align: center;*/
+}
+.grid-fourone{
+grid-column-start: 1;
+grid-column-end:4;
+grid-row-start:1 ;
+grid-row-end:3 ;
+}
+.grid-fourtwo{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+}
+.grid-fourthree{
+    grid-column-start: 1;
+    grid-column-end: 3;
+   grid-row-start:3;
+   grid-row-end:6 ;
+}
+.grid-fourfour{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start:3;
+    grid-row-end:6 ;
+}
+.grid-fourfive{
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.grid-fourone:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+}
+.grid-fourtwo:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-fourthree:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-fourfour:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+.grid-fourfive:nth-child(5){
+    background-color: rgb(240, 203, 136);
+}
+
+
+/*here we have grids 7 and 9 using classes*/
+
+.grid-containerseven {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(4,1fr);
+    /*grid-template-columns: 300px repeat(2, 200px);*/
+    grid-template-rows: repeat(3,100px);   
+    grid-gap: 10px;
+}
+.grid-seven {
+   color: rgb(26, 23, 23);
+   border-radius: 1px;
+   margin: 5px;
+   /*text-align: center;*/
+}
+.nestedgrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    grid-template-areas: 
+    "a b"
+    "b c";
+}
+.nestedgrid div {
+padding: 10px;
+border-radius: 1px;
+}
+
+.grid-sevenone{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2 ;
+}
+.grid-seventwo{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end:2 ;
+}
+.grid-seventhree {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:4; 
+}
+.grid-sevenfour {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:2;
+    grid-row-end:4; 
+}
+.grid-sevenone:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+}
+.grid-seventwo:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-seventhree:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-sevenfour:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+.nestedgrid:nth-child(1){
+    background-color: rgb(240, 203, 136);
+    grid-area: a;
+}
+.nestedgrid:nth-child(2){
+    background-color: rgb(231, 225, 171);
+    grid-area: b;
+}
+.nestedgrid:nth-child(3){
+    background-color: rgb(231, 231, 185);
+    grid-area: c;
+}
+
+
+/* Grid 9*/
+.grid-containernine {
+    display: grid;
+    border: 5px solid black;
+    background-color: rgb(36, 36, 68);
+    grid-template-columns: repeat(10,1fr);
+    /*grid-template-columns: 300px repeat(2, 200px);*/
+    grid-template-rows: repeat(8,50px);
+    grid-gap: 10px; 
+}
+.grid-nine {
+   color: rgb(26, 23, 23);
+   border-radius: 1px;
+   margin: 5px;
+   /*text-align: center;*/
+}
+.grid-nineone{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start:1;
+    grid-row-end:3 ;
+}
+.grid-ninetwo{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end:9 ;
+   
+}
+.grid-ninethree {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start:3;
+    grid-row-end:6 ; 
+}
+.grid-ninefour {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start:6;
+    grid-row-end:9 ; 
+}
+.grid-ninefive {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start:6;
+    grid-row-end:9 ; 
+}
+
+
+.grid-nineone:nth-child(1) {
+    background-color: rgba(121, 22, 9, 0.781);
+}
+.grid-ninetwo:nth-child(2) {
+    background-color: rgba(235, 14, 14, 0.616);
+}
+.grid-ninethree:nth-child(3) {
+    background-color: rgba(247, 111, 70, 0.767);
+}
+.grid-ninefour:nth-child(4) {
+    background-color: rgba(228, 152, 38, 0.616);
+}
+.grid-ninefive:nth-child(5){
+    background-color: rgb(240, 203, 136);
+}
+
+
+#grid-containerseven div{
+    background: #d1a8a8;
+    padding: 30px;
+}
+#gridcontainerseven div:nth-child(even){
+    background: #777;
+}
+
+
+
+/* Assignment on Grid Started here*/
+div.grid_complex {
+    display: grid;
+    gap: 5px;
+    background-color: rgb(9, 42, 61);
+    grid-template-areas:
+    "ma ma na na"
+    "ma ma na na"
+    "la ka ka ka"
+    "la ka ka ka"
+    "ba ba ba ba"
+}
+div.grid_complex div {
+    padding: 10px;
+    border-radius: 1px;
+}
+div.grid_complex div:nth-child(1) {
+    background-color: yellow;
+    grid-area: ma;
+}
+div.grid_complex div:nth-child(2) {
+    background-color: yellow;
+    grid-area: na;
+}
+div.grid_complex div:nth-child(3) {
+    background-color: yellow;
+    grid-area: la;
+}
+div.grid_complex div:nth-child(4) {
+    background-color: yellow;
+    grid-area: ka;
+}
+div.grid_complex div:nth-child(5) {
+    background-color: yellow;
+    grid-area: ba;
+}
+/*div.grid_complex div:nth-child(6) {
+    background-color: red;
+    grid-area: r2C3;
+}*/
